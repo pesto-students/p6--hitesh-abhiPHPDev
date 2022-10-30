@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.input-control{
+    width: 15rem;
+    float: left;
+    margin: 10px;
+}
+
+.input-control label {
+    font-weight: bolder;
+}
+.input-control input {
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+ 
+.log-messages {
+    width: 100%;
+    clear: both;
+    font-weight: bold;
+}
