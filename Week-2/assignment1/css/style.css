@@ -11,7 +11,7 @@ html {
 }
 
 .wrapper {
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -47,7 +47,7 @@ html {
 }
 
 .heading__main:hover {
-    transform: skewX(15deg) skewY(2deg) scale(1.1);
+    transform: skewX(-2deg) skewY(-2deg) scale(1.1);
 }
 
 @keyframes moveInLeft {
@@ -281,4 +281,86 @@ main {
     position: absolute;
     top: 5rem;
     left: 30rem;
+}
+
+.signup-formsection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.signup-formsection .heading__main:hover {
+    transform: none;
+}
+
+.signup-formsection .form {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 90px);
+}
+
+.signup-formsection .form .col12 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.signup-formsection .form label {
+    width: 100%;
+    font-size: 1.5rem;
+    /* clear: both; */
+    padding-top: 10px;
+    font-weight: bold;
+}
+.signup-formsection .form .col12 div {
+    width: 100%;
+    clear: both;
+    padding: 10px 0px 10px 0px;
+}
+.signup-formsection .form .col12 div.col6 {
+    padding-right: 10px;margin-right: 10px;width: calc(100% - 50px);
+}
+.signup-formsection .form .col12 div input[type=text],
+.signup-formsection .form .col12 div input[type=email],
+.signup-formsection .form .col12 div input[type=password] {
+    width: 100%;
+    height: 45px;
+    border-radius: 9px;
+    /* margin: 2px 0px 0px 3px; */
+    padding: 10px;
+}
+
+
+.signup-formsection .form .col12 div select {
+    width: calc(100% - 17px);
+    height: 45px;
+    border-radius: 9px;
+    /* margin: 2px 0px 0px 3px; */
+    padding: 10px;
+}
+
+.signup-formsection .form .col12 input[type="radio"],.signup-formsection .form .col12 input[type="checkbox"]  {
+    /* width: 10%; */
+    /* height: 113px; */
+    /* display: block; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    content: blue;
+    margin-left: 10px;
+}
+
+
+.signup-formsection .form .col12 button {
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #ffce00, #0375b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    transition: all 0.8s;
 }
