@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: "Montserrat", sans-serif;
+    align-self: center;
+    background-image: linear-gradient(to right, #fff, #ffce00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: moveInRight 2s;
+}
+
+.heading__main {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #ffce00, #0375b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    transition: all 0.8s;
+}
+
+.heading__main:hover {
+    transform: skewX(-2deg) skewY(-2deg) scale(1.1);
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(300%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mb-30 {
+    margin-bottom: 3rem;
+}
+
+.mb-40 {
+    margin-bottom: 4rem;
+}
+
+.mb-50 {
+    margin-bottom: 5rem;
+}
+
+.mb-60 {
+    margin-bottom: 6rem;
+}
+
+.mb-70 {
+    margin-bottom: 7rem;
+}
+
+.mb-80 {
+    margin-bottom: 8rem;
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+.mt-30 {
+    margin-top: 3rem;
+}
+
+.mt-40 {
+    margin-top: 4rem;
+}
+
+.mt-50 {
+    margin-top: 5rem;
+}
+
+.mt-60 {
+    margin-top: 6rem;
+}
+
+.mt-70 {
+    margin-top: 7rem;
+}
+
+.mt-80 {
+    margin-top: 8rem;
+}
+
+@media (max-width: 800px) {
+    .photo {
+        display: none;
+    }
+
+    .heading__mainh1 {
+        font-size: 2rem;
+    }
+
+    .about-section {
+        flex-wrap: wrap;
+    }
+}
+
+nav {
+    background-color: #0375b4;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #ffce00;
+}
+
+nav .logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffce00;
+}
+
+nav .logo img{
+    height: 29px;
+    float: left;
+    display: flex;
+    flex-flow: wrap;
+}
+nav .logo a{
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.btn:link,
+.btn:visited {
+    width: 25rem;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #ffce00;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    align-self: center;
+    transition: all 2s;
+    animation: moveInRight 2s;
+}
+
+.btn:hover {
+    color: pink;
+}
+
+.hero-section {
+    display: flex;
+    background-image: linear-gradient(to right bottom, rgba(255, 206, 0, 0.9), rgba(3, 117, 180, 0.9)), url("../images/photo-bg.jpg");
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 50rem;
+    max-height: 100%;
+    padding: 11.5rem 0 30rem 0;
+    animation: moveInLeft 2s;
+}
+
+.hero-photo {
+    width: 50rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us {
+    display: flex;
+    justify-content: start;
+    padding: 1rem 5rem;
+    height: 50rem;
+    gap: 3rem;
+}
+
+.about-us__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    color: #0375b4;
+    padding: 2rem;
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.about-us__text p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.about-us__composition {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-us__composition--photo-1 {
+    width: 35rem;
+    flex-basis: 50%;
+    flex-grow: 0;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+.about-us__composition--photo-2 {
+    width: 35rem;
+    flex-basis: 50%;
+    flex-grow: 0;
+    position: absolute;
+    top: 5rem;
+    left: 30rem;
+}
+
+.signup-formsection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.signup-formsection .heading__main:hover {
+    transform: none;
+}
+
+.signup-formsection .form {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 90px);
+}
+
+.signup-formsection .form .col12 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.signup-formsection .form label {
+    width: 100%;
+    font-size: 1.5rem;
+    /* clear: both; */
+    padding-top: 10px;
+    font-weight: bold;
+}
+.signup-formsection .form .col12 div {
+    width: 100%;
+    clear: both;
+    padding: 10px 0px 10px 0px;
+}
+.signup-formsection .form .col12 div.col6 {
+    padding-right: 10px;margin-right: 10px;width: calc(100% - 50px);
+}
+.signup-formsection .form .col12 div input[type=text],
+.signup-formsection .form .col12 div input[type=email],
+.signup-formsection .form .col12 div input[type=password] {
+    width: 100%;
+    height: 45px;
+    border-radius: 9px;
+    /* margin: 2px 0px 0px 3px; */
+    padding: 10px;
+}
+
+
+.signup-formsection .form .col12 div select {
+    width: calc(100% - 17px);
+    height: 45px;
+    border-radius: 9px;
+    /* margin: 2px 0px 0px 3px; */
+    padding: 10px;
+}
+
+.signup-formsection .form .col12 input[type="radio"],.signup-formsection .form .col12 input[type="checkbox"]  {
+    /* width: 10%; */
+    /* height: 113px; */
+    /* display: block; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    content: blue;
+    margin-left: 10px;
+}
+
+
+.signup-formsection .form .col12 button {
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #ffce00, #0375b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    transition: all 0.8s;
+}
